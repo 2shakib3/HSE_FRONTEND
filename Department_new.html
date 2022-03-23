@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>::HSE:: Department</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Favicon-->
+
+    <!-- plugin css file  -->
+    <link
+      rel="stylesheet"
+      href="assets/plugin/datatables/responsive.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugin/datatables/dataTables.bootstrap5.min.css"
+    />
+
+    <!-- project css file  -->
+    <link rel="stylesheet" href="assets/css/ebazar.style.min.css" />
+  </head>
+  <body>
+    <div id="ebazar-layout" class="theme-blue">
+      <!-- sidebar -->
+      <div class="sidebar px-4 py-4 py-md-4 me-0">
+        <div class="d-flex flex-column h-100">
+          <a href="index.html" class="mb-0 brand-icon">
+            <span class="logo-icon">
+              <i class="fa fa-book fs-4"></i>
+            </span>
+            <span class="logo-text">HSE SYSTEM</span>
+          </a>
+          <!-- Menu: main ul -->
+          <ul class="menu-list flex-grow-1 mt-3">
+            <li>
+              <a class="m-link active" href="index.html"
+                ><i class="icofont-home fs-5"></i> <span>Dashboard</span></a
+              >
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-company"
+                href="#"
+              >
+                <i class="icofont-users-alt-2 fs-5"></i>
+                <span>Office Setup</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-company">
+                <li>
+                  <a class="ms-link" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="Department_new.html"
+                    >Department Setup</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="Department_new.html"
+                    >Designation Setup</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="Department_new.html"
+                    >Employees Setup</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="m-link" href="index.html"
+                ><i class="fa fa-file-text-o fs-5"></i>
+                <span>Safety Policy</span></a
+              >
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-product"
+                href="#"
+              >
+                <i class="icofont-users-alt-2 fs-5"></i>
+                <span>Safety & Health Committee</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-product">
+                <li>
+                  <a class="ms-link" href="product-grid.html">Product Grid</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="product-list.html">Product List</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-workplace"
+                href="#"
+              >
+                <!-- <i class="icofont-users-alt-2 fs-5"></i> -->
+                <span>Workplace Inspection</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-workplace">
+                <li>
+                  <a class="ms-link" href="workplace_inspection.html"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="workplace_inspection_list.html"
+                    >Create Inspection</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="product-edit.html"
+                    >List of Inspection</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="product-detail.html"
+                    >Rectified Inspection</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#categories"
+                href="#"
+              >
+                <i class="icofont-chart-flow fs-5"></i>
+                <span>Accident Notification</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="categories">
+                <li>
+                  <a class="ms-link" href="categorie-list.html"
+                    >Categories List</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="categories-edit.html"
+                    >Categories Edit</a
+                  >
+                </li>
+                <li>
+                  <a class="ms-link" href="categories-add.html"
+                    >Categories Add</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-order"
+                href="#"
+              >
+                <i class="icofont-notepad fs-5"></i>
+                <span>Safe Work Procedure</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-order">
+                <li>
+                  <a class="ms-link" href="order-list.html">Orders List</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="order-details.html">Order Details</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="order-invoices.html"
+                    >Order Invoices</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#customers-info"
+                href="#"
+              >
+                <i class="icofont-funky-man fs-5"></i> <span>HIRARC</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="customers-info">
+                <li>
+                  <a class="ms-link" href="customers.html">Customers List</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="customer-detail.html"
+                    >Customers Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-sale"
+                href="#"
+              >
+                <i class="icofont-sale-discount fs-5"></i>
+                <span>Chemical Management</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-sale">
+                <li>
+                  <a class="ms-link" href="coupons-list.html">Coupons List</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="coupon-add.html">Coupons Add</a>
+                </li>
+                <li>
+                  <a class="ms-link" href="coupon-edit.html">Coupons Edit</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-inventory"
+                href="#"
+              >
+                <i class="icofont-chart-histogram fs-5"></i>
+                <span>Contractor Safety Management</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-inventory">
+                <li>
+                  <a class="ms-link" href="inventory-info.html">Stock List</a>
+                </li>
+                <li><a class="ms-link" href="purchase.html">Purchase</a></li>
+                <li><a class="ms-link" href="supplier.html">Supplier</a></li>
+                <li><a class="ms-link" href="returns.html">Returns</a></li>
+                <li>
+                  <a class="ms-link" href="department.html">Department</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-Componentsone"
+                href="#"
+                ><i class="icofont-ui-calculator"></i> <span>PPE Program</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="menu-Componentsone">
+                <li><a class="ms-link" href="invoices.html">Invoices </a></li>
+                <li><a class="ms-link" href="expenses.html">Expenses </a></li>
+                <li>
+                  <a class="ms-link" href="salaryslip.html">Salary Slip </a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsed">
+              <a
+                class="m-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#app"
+                href="#"
+              >
+                <i class="icofont-code-alt fs-5"></i>
+                <span>Assessment / Monitoring</span>
+                <span
+                  class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                ></span
+              ></a>
+              <!-- Menu: Sub menu ul -->
+              <ul class="sub-menu collapse" id="app">
+                <li><a class="ms-link" href="calendar.html">Calandar</a></li>
+                <li><a class="ms-link" href="chat.html"> Chat App</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="m-link" href="store-locator.html"
+                ><i class="icofont-focus fs-5"></i> <span>Training</span></a
+              >
+            </li>
+            <!-- <li>
+                            <a class="m-link" href="ui-elements/ui-alerts.html"
+                            ><i class="icofont-paint fs-5"></i>
+                            <span>UI Components</span></a
+                            >
+                        </li> -->
+            <!-- <li class="collapsed">
+                            <a
+                            class="m-link"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#page"
+                            href="#"
+                            >
+                            <i class="icofont-page fs-5"></i> <span>Other Pages</span>
+                            <span
+                                class="arrow icofont-rounded-down ms-auto text-end fs-5"
+                            ></span
+                            ></a>
+                            <ul class="sub-menu collapse" id="page">
+                            <li>
+                                <a class="ms-link" href="admin-profile.html">Profile Page</a>
+                            </li>
+                            <li>
+                                <a class="ms-link" href="purchase-plan.html"
+                                >Price Plan Example</a
+                                >
+                            </li>
+                            <li>
+                                <a class="ms-link" href="charts.html">Charts Example</a>
+                            </li>
+                            <li><a class="ms-link" href="table.html">Table Example</a></li>
+                            <li><a class="ms-link" href="forms.html">Forms Example</a></li>
+                            <li><a class="ms-link" href="icon.html">Icons</a></li>
+                            <li><a class="ms-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li> -->
+          </ul>
+          <!-- Menu: menu collepce btn -->
+          <button
+            type="button"
+            class="btn btn-link sidebar-mini-btn text-light"
+          >
+            <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- main body area -->
+      <div class="main px-lg-4 px-md-4">
+        <!-- Body: Header -->
+        <div class="header">
+          <nav class="navbar py-4">
+            <div class="container-xxl">
+              <!-- header rightbar icon -->
+              <div
+                class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1"
+              >
+                <div class="dropdown notifications">
+                  <a
+                    class="nav-link dropdown-toggle pulse"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="icofont-alarm fs-5"></i>
+                    <span class="pulse-ring"></span>
+                  </a>
+                  <div
+                    id="NotificationsDiv"
+                    class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-md-end p-0 m-0 mt-3"
+                  >
+                    <div class="card border-0 w380">
+                      <div class="card-header border-0 p-3">
+                        <h5
+                          class="mb-0 font-weight-light d-flex justify-content-between"
+                        >
+                          <span>Notifications</span>
+                          <span class="badge text-white">06</span>
+                        </h5>
+                      </div>
+                      <div class="tab-content card-body">
+                        <div class="tab-pane fade show active">
+                          <ul class="list-unstyled list mb-0">
+                            <li class="py-2 mb-1 border-bottom">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <img
+                                  class="avatar rounded-circle"
+                                  src="assets/images/xs/avatar1.svg"
+                                  alt=""
+                                />
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Chloe Walkerr</span
+                                    >
+                                    <small>2MIN</small>
+                                  </p>
+                                  <span class=""
+                                    >Added New Product 2021-07-15
+                                    <span class="badge bg-success"
+                                      >Add</span
+                                    ></span
+                                  >
+                                </div>
+                              </a>
+                            </li>
+                            <li class="py-2 mb-1 border-bottom">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <div class="avatar rounded-circle no-thumbnail">
+                                  AH
+                                </div>
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Alan Hill</span
+                                    >
+                                    <small>13MIN</small>
+                                  </p>
+                                  <span class="">Invoice generator </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="py-2 mb-1 border-bottom">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <img
+                                  class="avatar rounded-circle"
+                                  src="assets/images/xs/avatar3.svg"
+                                  alt=""
+                                />
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Melanie Oliver</span
+                                    >
+                                    <small>1HR</small>
+                                  </p>
+                                  <span class="">Orader Return RT-00004</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="py-2 mb-1 border-bottom">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <img
+                                  class="avatar rounded-circle"
+                                  src="assets/images/xs/avatar5.svg"
+                                  alt=""
+                                />
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Boris Hart</span
+                                    >
+                                    <small>13MIN</small>
+                                  </p>
+                                  <span class=""
+                                    >Product Order to Toyseller</span
+                                  >
+                                </div>
+                              </a>
+                            </li>
+                            <li class="py-2 mb-1 border-bottom">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <img
+                                  class="avatar rounded-circle"
+                                  src="assets/images/xs/avatar6.svg"
+                                  alt=""
+                                />
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Alan Lambert</span
+                                    >
+                                    <small>1HR</small>
+                                  </p>
+                                  <span class="">Leave Apply</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="py-2">
+                              <a href="javascript:void(0);" class="d-flex">
+                                <img
+                                  class="avatar rounded-circle"
+                                  src="assets/images/xs/avatar7.svg"
+                                  alt=""
+                                />
+                                <div class="flex-fill ms-2">
+                                  <p
+                                    class="d-flex justify-content-between mb-0"
+                                  >
+                                    <span class="font-weight-bold"
+                                      >Zoe Wright</span
+                                    >
+                                    <small class="">1DAY</small>
+                                  </p>
+                                  <span class=""
+                                    >Product Stoke Entry Updated</span
+                                  >
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <a class="card-footer text-center border-top-0" href="#">
+                        View all notifications</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover"
+                >
+                  <div class="u-info me-2">
+                    <p class="mb-0 text-end line-height-sm">
+                      <span class="font-weight-bold">Vimala</span>
+                    </p>
+                    <small>Admin Profile</small>
+                  </div>
+                  <a
+                    class="nav-link dropdown-toggle pulse p-0"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                  >
+                    <img
+                      class="avatar lg rounded-circle img-thumbnail"
+                      src="assets/images/profile_av.svg"
+                      alt="profile"
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0"
+                  >
+                    <div class="card border-0 w280">
+                      <div class="card-body pb-0">
+                        <div class="d-flex py-1">
+                          <img
+                            class="avatar rounded-circle"
+                            src="assets/images/profile_av.svg"
+                            alt="profile"
+                          />
+                          <div class="flex-fill ms-3">
+                            <p class="mb-0">
+                              <span class="font-weight-bold">Vimala</span>
+                            </p>
+                            <small class="">vimala@gmail.com</small>
+                          </div>
+                        </div>
+
+                        <div><hr class="dropdown-divider border-dark" /></div>
+                      </div>
+                      <div class="list-group m-2">
+                        <a
+                          href="admin-profile.html"
+                          class="list-group-item list-group-item-action border-0"
+                          ><i class="icofont-ui-user fs-5 me-3"></i>Profile
+                          Page</a
+                        >
+                        <a
+                          href="ui-elements/auth-signin.html"
+                          class="list-group-item list-group-item-action border-0"
+                          ><i class="icofont-logout fs-5 me-3"></i>Signout</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- menu toggler -->
+              <button
+                class="navbar-toggler p-0 border-0 menu-toggle order-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainHeader"
+              >
+                <span class="fa fa-bars"></span>
+              </button>
+
+              <!-- main menu Search-->
+              <div
+                class="order-0 col-lg-10 col-md-4 col-sm-12 col-12 mb-3 mb-md-0"
+              >
+                <div
+                  class="marquee"
+                  style="
+                    background-color: #315948;
+                    border-radius: 15px;
+                    height: 40px;
+                  "
+                >
+                  <marquee>
+                    <p
+                      style="
+                        line-height: 50px;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 500;
+                      "
+                    >
+                      Welcome TO Health and Safety System
+                    </p>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Body: Body -->
+        <div class="body d-flex py-3">
+          <div class="container-xxl">
+            <div class="row align-items-center">
+              <div class="border-0 mb-4">
+                <div
+                  class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap"
+                >
+                  <h3 class="fw-bold py-3 mb-0">Department</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Row end  -->
+            <div class="row clearfix g-3">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div
+                    class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0"
+                  >
+                    <h6 class="mb-0 fw-bold">Department Add</h6>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="row g-3 mb-3">
+                        <div class="col-sm-12">
+                          <label for="depone" class="form-label"
+                            >Depertment Name</label
+                          >
+                          <input type="text" class="form-control" id="depone" />
+                        </div>
+                        <div class="col-sm-12">
+                          <label for="depone" class="form-label"
+                            >Depertment Location</label
+                          >
+                          <input type="text" class="form-control" id="depone" />
+                        </div>
+                        <div class="col-sm-12">
+                          <label for="deptwophone" class="form-label"
+                            >Phone</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="deptwophone"
+                          />
+                        </div>
+                        <div class="col-sm-12">
+                          <label for="fileimg" class="form-label"
+                            >Depertment Image</label
+                          >
+                          <input
+                            type="File"
+                            class="form-control"
+                            id="fileimg"
+                          />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        Add Contact
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <table
+                      id="myProjectTable"
+                      class="table table-hover align-middle mb-0"
+                      style="width: 100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Department Name</th>
+                          <th>Location</th>
+                          <th>Image</th>
+                          <th>Phone</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>Kitchne</span>
+                          </td>
+                          <td>Second Floor</td>
+                          <td>
+                            <img
+                              class="avatar"
+                              src="assets/images/xs/avatar1.svg"
+                              alt=""
+                            />
+                          </td>
+                          <td>518-555-0145</td>
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic outlined example"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#expedit"
+                              >
+                                <i class="icofont-edit text-success"></i>
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary deleterow"
+                              >
+                                <i class="icofont-ui-delete text-danger"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>Londry</span>
+                          </td>
+                          <td>Second Floor</td>
+                          <td>
+                            <img
+                              class="avatar"
+                              src="assets/images/xs/avatar1.svg"
+                              alt=""
+                            />
+                          </td>
+                          <td>518-555-0145</td>
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic outlined example"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#expedit"
+                              >
+                                <i class="icofont-edit text-success"></i>
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary deleterow"
+                              >
+                                <i class="icofont-ui-delete text-danger"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>Food</span>
+                          </td>
+                          <td>Second Floor</td>
+                          <td>
+                            <img
+                              class="avatar"
+                              src="assets/images/xs/avatar1.svg"
+                              alt=""
+                            />
+                          </td>
+                          <td>518-555-0145</td>
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic outlined example"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#expedit"
+                              >
+                                <i class="icofont-edit text-success"></i>
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary deleterow"
+                              >
+                                <i class="icofont-ui-delete text-danger"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>Painting</span>
+                          </td>
+                          <td>Second Floor</td>
+                          <td>
+                            <img
+                              class="avatar"
+                              src="assets/images/xs/avatar1.svg"
+                              alt=""
+                            />
+                          </td>
+                          <td>518-555-0145</td>
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic outlined example"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#expedit"
+                              >
+                                <i class="icofont-edit text-success"></i>
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary deleterow"
+                              >
+                                <i class="icofont-ui-delete text-danger"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span>Drywash</span>
+                          </td>
+                          <td>Second Floor</td>
+                          <td>
+                            <img
+                              class="avatar"
+                              src="assets/images/xs/avatar1.svg"
+                              alt=""
+                            />
+                          </td>
+                          <td>518-555-0145</td>
+                          <td>
+                            <div
+                              class="btn-group"
+                              role="group"
+                              aria-label="Basic outlined example"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#expedit"
+                              >
+                                <i class="icofont-edit text-success"></i>
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary deleterow"
+                              >
+                                <i class="icofont-ui-delete text-danger"></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Row End -->
+          </div>
+        </div>
+
+        <!-- Modal Custom Settings-->
+
+        <!-- Modal Members-->
+        <div
+          class="modal fade"
+          id="addUser"
+          tabindex="-1"
+          aria-labelledby="addUserLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="addUserLabel">
+                  Employee Invitation
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="inviteby_email">
+                  <div class="input-group mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                      id="exampleInputEmail1"
+                      aria-describedby="exampleInputEmail1"
+                    />
+                    <button
+                      class="btn btn-dark"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Sent
+                    </button>
+                  </div>
+                </div>
+                <div class="members_list">
+                  <h6 class="fw-bold">Employee</h6>
+                  <ul
+                    class="list-unstyled list-group list-group-custom list-group-flush mb-0"
+                  >
+                    <li class="list-group-item py-3 text-center text-md-start">
+                      <div
+                        class="d-flex align-items-center flex-column flex-sm-column flex-md-column flex-lg-row"
+                      >
+                        <div class="no-thumbnail mb-2 mb-md-0">
+                          <img
+                            class="avatar lg rounded-circle"
+                            src="assets/images/xs/avatar2.html"
+                            alt=""
+                          />
+                        </div>
+                        <div class="flex-fill ms-3 text-truncate">
+                          <h6 class="mb-0 fw-bold">Rachel Carr(you)</h6>
+                          <span class="text-muted">rachel.carr@gmail.com</span>
+                        </div>
+                        <div class="members-action">
+                          <span class="members-role">Admin</span>
+                          <div class="btn-group">
+                            <button
+                              type="button"
+                              class="btn bg-transparent dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="icofont-ui-settings fs-6"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="icofont-ui-password fs-6 me-2"></i
+                                  >ResetPassword</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="icofont-chart-line fs-6 me-2"></i
+                                  >ActivityReport</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item py-3 text-center text-md-start">
+                      <div
+                        class="d-flex align-items-center flex-column flex-sm-column flex-md-column flex-lg-row"
+                      >
+                        <div class="no-thumbnail mb-2 mb-md-0">
+                          <img
+                            class="avatar lg rounded-circle"
+                            src="assets/images/xs/avatar3.html"
+                            alt=""
+                          />
+                        </div>
+                        <div class="flex-fill ms-3 text-truncate">
+                          <h6 class="mb-0 fw-bold">
+                            Lucas Baker<a href="#" class="link-secondary ms-2"
+                              >(Resend invitation)</a
+                            >
+                          </h6>
+                          <span class="text-muted">lucas.baker@gmail.com</span>
+                        </div>
+                        <div class="members-action">
+                          <div class="btn-group">
+                            <button
+                              type="button"
+                              class="btn bg-transparent dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Members
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <i class="icofont-check-circled"></i>
+
+                                  <span>All operations permission</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <i class="fs-6 p-2 me-1"></i>
+                                  <span>Only Invite & manage team</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <button
+                              type="button"
+                              class="btn bg-transparent dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="icofont-ui-settings fs-6"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  ><i class="icofont-delete-alt fs-6 me-2"></i
+                                  >Delete Member</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item py-3 text-center text-md-start">
+                      <div
+                        class="d-flex align-items-center flex-column flex-sm-column flex-md-column flex-lg-row"
+                      >
+                        <div class="no-thumbnail mb-2 mb-md-0">
+                          <img
+                            class="avatar lg rounded-circle"
+                            src="assets/images/xs/avatar8.html"
+                            alt=""
+                          />
+                        </div>
+                        <div class="flex-fill ms-3 text-truncate">
+                          <h6 class="mb-0 fw-bold">Una Coleman</h6>
+                          <span class="text-muted">una.coleman@gmail.com</span>
+                        </div>
+                        <div class="members-action">
+                          <div class="btn-group">
+                            <button
+                              type="button"
+                              class="btn bg-transparent dropdown-toggle"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Members
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <i class="icofont-check-circled"></i>
+
+                                  <span>All operations permission</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <i class="fs-6 p-2 me-1"></i>
+                                  <span>Only Invite & manage team</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="btn-group">
+                            <div class="btn-group">
+                              <button
+                                type="button"
+                                class="btn bg-transparent dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="icofont-ui-settings fs-6"></i>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><i
+                                      class="icofont-ui-password fs-6 me-2"
+                                    ></i
+                                    >ResetPassword</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><i class="icofont-chart-line fs-6 me-2"></i
+                                    >ActivityReport</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><i class="icofont-delete-alt fs-6 me-2"></i
+                                    >Suspend member</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><i
+                                      class="icofont-not-allowed fs-6 me-2"
+                                    ></i
+                                    >Delete Member</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Contact-->
+        <div class="modal fade" id="expedit" tabindex="-1" aria-hidden="true">
+          <div
+            class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="expeditLabel">
+                  Edit Contact
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="item1" class="form-label">Person Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="item1"
+                    value="Phil Glover"
+                  />
+                </div>
+                <div class="deadline-form">
+                  <form>
+                    <div class="row g-3 mb-3">
+                      <div class="col-sm-6">
+                        <label class="form-label">Contact Image</label>
+                        <input type="file" class="form-control" />
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="abc1" class="form-label">Birthdate</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="abc1"
+                          value="2021-03-12"
+                        />
+                      </div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                      <div class="col-sm-6">
+                        <label for="deptwo1" class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="deptwo1"
+                          value="PhilGlover@gmail.com"
+                        />
+                      </div>
+                      <div class="col-sm-6">
+                        <label class="form-label">Phone</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="775-555-0117"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Done
+                </button>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Plugin Js-->
+    <script src="assets/bundles/dataTables.bundle.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../js/template.js"></script>
+    <script>
+      // project data table
+      $(document).ready(function () {
+        $("#myProjectTable")
+          .addClass("nowrap")
+          .dataTable({
+            responsive: true,
+            columnDefs: [{ targets: [-1, -3], className: "dt-body-right" }],
+          });
+        $(".deleterow").on("click", function () {
+          var tablename = $(this).closest("table").DataTable();
+          tablename.row($(this).parents("tr")).remove().draw();
+        });
+      });
+    </script>
+  </body>
+</html>
